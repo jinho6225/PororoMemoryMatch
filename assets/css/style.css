@@ -231,7 +231,7 @@ main {
   #gameSelect {
     font-size: 220%;
     height: 22%;
-    width: 40%;
+    width: 44%;
   }
 }
 
@@ -274,7 +274,7 @@ main {
   #gameSelect {
     font-size: 220%;
     height: 30%;
-    width: 40%;
+    width: 44%;
   }
 }
 
@@ -317,11 +317,11 @@ main {
   #gameSelect {
     font-size: 165%;
     height: 25%;
-    width: 40%;
+    width: 44%;
   }
 }
 
-@media only screen and (max-width: 811px) {
+@media only screen and (max-width: 812px) {
   .col-2 {
     width: 16%;
   }
@@ -360,11 +360,11 @@ main {
   #gameSelect {
     font-size: 100%;
     height: 35%;
-    width: 40%;
+    width: 45%;
   }
 }
 
-@media only screen and (max-width: 735px) {
+@media only screen and (max-width: 736px) {
   .col-2 {
     width: 16%;
   }
@@ -403,7 +403,7 @@ main {
   #gameSelect {
     font-size: 100%;
     height: 35%;
-    width: 40%;
+    width: 43%;
   }
 }
 
