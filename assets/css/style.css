@@ -1,0 +1,90 @@
+.head {
+  height: 15%;
+}
+.head-title {
+  font-size: 250%;
+}
+.game {
+  height: 85%;
+}
+aside {
+  display: flex;
+  flex-direction: column;
+  height: 96%;
+}
+.bd {
+  width: 100%;
+  height: 100%;
+  background-color: powderblue;
+  margin: .5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.aside-content {
+  text-align: center;
+  font-size: 100%;
+}
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  height: 100%;
+}
+.cd {
+  margin: 1% .2%;
+  flex-basis: 16%;
+  height: 30%;
+}
+.card-back {
+  background-color: powderblue;
+  animation: mymove 3s infinite;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+}
+@keyframes mymove {
+  50% {background-color: rgba(206, 249, 255, 0.50);}
+}
+
+
+@media only screen and (max-width: 667px) {
+  .cd {
+    flex-basis: 16%;
+    height: 28%;
+  }
+  .bd {
+    width: 95%;
+    height: 90%;
+    margin: 1% 0;
+  }
+  .aside-content {
+    font-size: 80%;
+  }
+  .head-title {
+    font-size: 170%;
+  }
+}
+
+
+@media only screen and (max-width: 414px) {
+  .cd {
+    flex-basis: 32%;
+    height: 15%;
+  }
+  .bd {
+    width: 95%;
+    height: 90%;
+    margin: 1% 0
+  }
+  aside {
+    height: 99%;
+  }
+  .aside-content {
+    font-size: 75%;
+  }
+  .head-title {
+    font-size: 200%;
+  }
+}
