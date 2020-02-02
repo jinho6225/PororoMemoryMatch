@@ -63,20 +63,8 @@ function calculateAccuracy(attempts, matches) {
   }
 }
 
-var gamePlayedCount = 0
-function refresh() {
-  document.getElementById('modal').classList.add("hidden")
-  document.getElementById('attempts').textContent = 0
-  document.getElementById('accuracy').textContent = 0
-  matches = 0;
-  attempts = 0;
-  gamePlayedCount++
-  document.getElementById('gamePlayed').textContent = gamePlayedCount
-  gameCards.innerHTML = ""
-  mixCard(imgArr)
-}
-
-
+var threeByTwoArr = ['circle-pororo', 'circle-petty', 'circle-crong',
+'circle-pororo', 'circle-petty', 'circle-crong']
 var fourByTwoArr = ['circle-pororo', 'circle-petty', 'circle-loppy', 'circle-crong',
 'circle-pororo', 'circle-petty', 'circle-loppy', 'circle-crong']
 var threeByFourArr = ['circle-tong', 'circle-pororo', 'circle-poby', 'circle-petty',
@@ -87,7 +75,7 @@ var threeBySixArr = ['circle-tong', 'circle-rody', 'circle-pororo', 'circle-poby
 'circle-tong', 'circle-rody', 'circle-pororo', 'circle-poby', 'circle-pipi',
 'circle-petty', 'circle-loppy', 'circle-harry', 'circle-crong']
 
-function mixCard(arr, maxMatch) {
+function mixCard(arr, maxMatch, col) {
   maxMatches = maxMatch
   for (let i = 0; i < arr.length; i++) {
     var randomNum = Math.floor(Math.random() * arr.length)
@@ -96,36 +84,82 @@ function mixCard(arr, maxMatch) {
     arr[randomNum] = temp;
   }
   for (let i = 0; i < arr.length; i++) {
-
       var parentDiv = document.createElement('div')
-
-      // parentDiv.classList.add(col1)
-
-
+      parentDiv.classList.add(col)
       gameCards.appendChild(parentDiv).classList.add('cd')
       var childDiv1 = document.createElement('div')
       var childDiv2 = document.createElement('div')
       parentDiv.appendChild(childDiv1).classList.add('card-front')
       parentDiv.appendChild(childDiv2).classList.add('card-back')
       childDiv1.classList.add(arr[i])
-
   }
 }
 
-function fourByTwo() {
+function threeByTwo() {
+  var col = "col-4"
   game.classList.remove('hidden')
   gameSelect.classList.add("hidden")
-  mixCard(fourByTwoArr, 4)
+  mixCard(threeByTwoArr, 3, col)
+}
+function fourByTwo() {
+  var col = "col-3"
+  game.classList.remove('hidden')
+  gameSelect.classList.add("hidden")
+  mixCard(fourByTwoArr, 4, col)
 }
 function threeByFour() {
+  var col = "col-25"
   game.classList.remove('hidden')
   gameSelect.classList.add("hidden")
-  mixCard(threeByFourArr, 6)
+  mixCard(threeByFourArr, 6, col)
 }
 function threeBySix() {
+  var col = "col-2"
   game.classList.remove('hidden')
   gameSelect.classList.add("hidden")
-  mixCard(threeBySixArr, 9)
+  mixCard(threeBySixArr, 9, col)
+}
+
+var gamePlayedCount = 0
+function refresh() {
+  maxMatches = gameCards.childElementCount/2
+  document.getElementById('modal').classList.add("hidden")
+  document.getElementById('attempts').textContent = 0
+  document.getElementById('accuracy').textContent = 0
+  matches = 0;
+  attempts = 0;
+  gamePlayedCount++
+  document.getElementById('gamePlayed').textContent = gamePlayedCount
+  gameCards.innerHTML = ""
+  // document.getElementById('modal').className.add("hidden");
+  var arr;
+  var col
+  if (maxMatches === 3) {
+    arr = threeByTwoArr
+    col = "col-4"
+    mixCard(arr, 3, col)
+  }
+  if (maxMatches === 4) {
+    arr = fourByTwoArr
+    col = "col-3"
+    mixCard(arr, 4, col)
+  }
+  if (maxMatches === 6) {
+    arr = threeByFourArr
+    col = "col-25"
+    mixCard(arr, 6, col)
+  }
+  if (maxMatches === 9) {
+    arr = threeBySixArr
+    col = "col-2"
+    mixCard(arr, 9, col)
+  }
+}
+
+function selectGame() {
+  document.getElementById('modal').classList.add("hidden")
+  gameCards.innerHTML = ""
+  gameSelect.classList.remove("hidden")
 }
 
 function init() {

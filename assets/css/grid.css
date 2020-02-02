@@ -23,12 +23,19 @@ body {
 }
 .col-2 {
   width: 16%;
+  height: 30%;
+}
+.col-25 {
+  width: 23%;
+  height: 31%;
 }
 .col-3 {
-  width: 24%;
+  width: 22%;
+  height: 40%;
 }
 .col-4 {
-  width: 32%;
+  width: 25%;
+  height: 45%;
 }
 .col-5 {
   width: 40%;
