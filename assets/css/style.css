@@ -192,7 +192,7 @@ main {
   background-size: cover;
 }
 
-@media only screen and (max-width: 1366px) {
+@media only screen and (max-width: 1365px) {
   .col-2 {
     width: 16%;
   }
@@ -235,7 +235,7 @@ main {
   }
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1023px) {
   .col-2 {
     width: 16%;
   }
@@ -278,7 +278,7 @@ main {
   }
 }
 
-@media only screen and (max-width: 812px) {
+@media only screen and (max-width: 811px) {
   .col-2 {
     width: 16%;
   }
@@ -321,7 +321,7 @@ main {
   }
 }
 
-@media only screen and (max-width: 736px) {
+@media only screen and (max-width: 735px) {
   .col-2 {
     width: 16%;
   }
@@ -364,7 +364,7 @@ main {
   }
 }
 
-@media only screen and (max-width: 667px) {
+@media only screen and (max-width: 666px) {
   .col-2 {
     width: 16%;
   }
@@ -404,6 +404,54 @@ main {
     font-size: 100%;
     height: 35%;
     width: 40%;
+  }
+}
+
+@media only screen and (max-width: 568px) {
+  .col-2 {
+  width: 32%;
+  height: 15%;
+  }
+  .col-bd {
+    height: 95%;
+    width: 25%;
+  }
+  .col-25 {
+    width: 32%;
+    height: 15%;
+  }
+  .col-3 {
+    width: 44%;
+    height: 22%;
+  }
+  .col-4 {
+    width: 48%;
+    height: 23%;
+  }
+  .bd {
+    width: 95%;
+    height: 90%;
+    margin: 1% 0
+  }
+  aside {
+    height: 99%;
+  }
+  .aside-content {
+    font-size: 75%;
+  }
+  .head-title {
+    font-size: 220%;
+    padding: 0;
+  }
+  #modal {
+    font-size: 100%;
+    width: 60%;
+    height: 22%;
+  }
+  #gameSelect {
+    font-size: 100%;
+    width: 70%;
+    height: 40%;
   }
 }
 
@@ -503,6 +551,53 @@ main {
   }
 }
 
+@media only screen and (max-width: 320px) {
+  .col-2 {
+  width: 32%;
+  height: 15%;
+  }
+  .col-bd {
+    height: 95%;
+    width: 25%;
+  }
+  .col-25 {
+    width: 32%;
+    height: 15%;
+  }
+  .col-3 {
+    width: 44%;
+    height: 22%;
+  }
+  .col-4 {
+    width: 48%;
+    height: 23%;
+  }
+  .bd {
+    width: 95%;
+    height: 90%;
+    margin: 1% 0
+  }
+  aside {
+    height: 99%;
+  }
+  .aside-content {
+    font-size: 75%;
+  }
+  .head-title {
+    font-size: 180%;
+    padding: 0;
+  }
+  #modal {
+    font-size: 100%;
+    width: 60%;
+    height: 22%;
+  }
+  #gameSelect {
+    font-size: 100%;
+    width: 80%;
+    height: 23%;
+  }
+}
 
 
 
