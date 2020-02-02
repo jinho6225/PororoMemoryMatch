@@ -15,11 +15,22 @@
 
       <div class="head row">
         <header>
-          <p class="head-title"> Pororo Memory Match</p>
+          <p class="head-title"> PoRoRo Memory Match</p>
         </header>
       </div>
 
-      <div class="game row">
+        <div id="gameSelect" class="">
+          <p class="gameSelect-content">
+            Welcome!!!!😍<br>
+            Please choose the game size below ⬇️<br></p>
+          <button onclick="fourByTwo()">4 ｘ 2</button>
+          <button onclick="threeByFour()">4 ｘ 3</button>
+          <button onclick="threeBySix()">6 ｘ 3</button>
+
+        </div>
+
+      <div class="game row hidden">
+
 
         <aside class="col-2">
           <div class="bd">
@@ -29,79 +40,35 @@
             <p class="aside-content">Games Played</p>
           </div>
           <div class="bd">
-            <p class="aside-content">0</p>
+            <p class="aside-content" id="gamePlayed">0</p>
           </div>
           <div class="bd">
             <p class="aside-content">Attempts</p>
           </div>
           <div class="bd">
-            <p class="aside-content">0</p>
+            <p class="aside-content" id="attempts">0</p>
           </div>
           <div class="bd">
             <p class="aside-content">Accuracy</p>
           </div>
           <div class="bd">
-            <p class="aside-content">0</p>
+            <p class="aside-content" id="accuracy">0</p>
           </div>
         </aside>
 
-        <main class="col-10">
-          <div class="col-2 cd" >
-            <div class="card-back"></div>
-          </div>
-          <div class="col-2 cd" >
-            <div class="card-back"></div>
-          </div>
-          <div class="col-2 cd" >
-            <div class="card-back"></div>
-          </div>
-          <div class="col-2 cd" >
-            <div class="card-back"></div>
-          </div>
-          <div class="col-2 cd" >
-            <div class="card-back"></div>
-          </div>
-          <div class="col-2 cd" >
-            <div class="card-back"></div>
-          </div>
-          <div class="col-2 cd" >
-            <div class="card-back"></div>
-          </div>
-          <div class="col-2 cd" >
-            <div class="card-back"></div>
-          </div>
-          <div class="col-2 cd" >
-            <div class="card-back"></div>
-          </div>
-          <div class="col-2 cd" >
-            <div class="card-back"></div>
-          </div>
-          <div class="col-2 cd" >
-            <div class="card-back"></div>
-          </div>
-          <div class="col-2 cd" >
-            <div class="card-back"></div>
-          </div>
-          <div class="col-2 cd" >
-            <div class="card-back"></div>
-          </div>
-          <div class="col-2 cd" >
-            <div class="card-back"></div>
-          </div>
-          <div class="col-2 cd" >
-            <div class="card-back"></div>
-          </div>
-          <div class="col-2 cd" >
-            <div class="card-back"></div>
-          </div>
-          <div class="col-2 cd" >
-            <div class="card-back"></div>
-          </div>
-          <div class="col-2 cd" >
-            <div class="card-back"></div>
-          </div>
+        <main class="col-10" id="gameCards">
+          <!-- ?? -->
         </main>
 
+
+          <div id="modal" class="hidden">
+            <p class="modal-content">
+            Congratulation!!👍🏻<br>
+            Do you want to start again??😍<br>
+            Please click button below⬇️</p>
+            <button class="modal-content" onclick="refresh()">restart!</button>
+            <button class="modal-content" onclick="refresh()">select game</button>
+          </div>
       </div>
 
   </div>

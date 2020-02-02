@@ -1,8 +1,8 @@
 body {
   height: 97vh;
-  background-image: url(../images/proro-bg3.jpg);
-  /* background-size: cover; */
-  /* background-repeat: no-repeat; */
+  background-image: url(../images/pororo-bg4.jpg);
+  background-size: contain;
+  background-repeat: repeat;
   background-position: center;
 }
 .container {

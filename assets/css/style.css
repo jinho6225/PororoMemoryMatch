@@ -1,9 +1,28 @@
 .head {
   height: 15%;
+  display: flex;
+  align-items: center;
 }
 .head-title {
-  font-size: 250%;
+  width: 100%;
+  font-size: 400%;
+  font-family: cursive;
+  font-weight: 800;
+  color: #fff;
+  text-shadow: 3px 3px rgba(252, 63, 220, 0.8);
+  margin: 3% auto;
+  animation: glow 1s ease-in-out infinite alternate;
 }
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+
 .game {
   height: 85%;
 }
@@ -15,15 +34,17 @@ aside {
 .bd {
   width: 100%;
   height: 100%;
-  background-color: powderblue;
-  margin: .5%;
+  background-color: #9FD3FA;
+  border: 1px solid hotpink;
+  margin: 1%;
   display: flex;
   align-items: center;
   justify-content: center;
+  border-radius: 16px;
 }
 .aside-content {
   text-align: center;
-  font-size: 100%;
+  font-size: 150%;
 }
 main {
   display: flex;
@@ -35,35 +56,161 @@ main {
   margin: 1% .2%;
   flex-basis: 16%;
   height: 30%;
+  position: relative;
 }
-.card-back {
+.card-front, .card-back {
   background-color: powderblue;
-  animation: mymove 3s infinite;
+  border-radius: 50%;
+  border: 1px solid hotpink;
   height: 100%;
   width: 100%;
-  background-size: cover;
-  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
 }
-@keyframes mymove {
-  50% {background-color: rgba(206, 249, 255, 0.50);}
+.card-back {
+  background-image: url(../images/pororo-bg4.jpg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 1s;
 }
 
+.card-back:hover {
+  border: 5px solid hotpink;
+  transform: scale(1.1);
+}
+
+#modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 35%;
+  height: 35%;
+  font-size: 200%;
+  text-align: center;
+  padding: 2%;
+  background-color: white;
+  color:hotpink;
+  border-radius: 16px;
+  box-shadow: 5px 10px 50px hotpink, 5px 10px 50px rgb(238, 255, 163), 5px 10px 50px rgb(255, 63, 207)
+}
+
+.modal-conent {
+  text-align: center;
+  font-size: 130%;
+  border-radius: 16px;
+}
+
+#modal > button {
+  font-size: 100%;
+  border-radius: 16px;
+  text-align: center;
+}
+
+#gameSelect {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 35%;
+  height: 33%;
+  align-items: center;
+  font-size: 200%;
+  text-align: center;
+  padding: 2%;
+  background-color: white;
+  color:hotpink;
+  border-radius: 16px;
+  box-shadow: 5px 10px 50px hotpink, 5px 10px 50px rgb(238, 255, 163), 5px 10px 50px rgb(255, 63, 207)
+}
+
+.gameSelect-conent {
+  text-align: center;
+  text-shadow: 5px 10px hotpink;
+  font-size: 130%;
+  border-radius: 16px;
+}
+#gameSelect > button {
+  font-size: 100%;
+  border-radius: 16px;
+  text-align: center;
+}
+
+
+.circle-crong {
+  background-image: url(../images/circle_crong.png);
+  background-position: center;
+  background-size: cover;
+}
+.circle-harry {
+  background-image: url(../images/circle_harry.png);
+  background-position: center;
+  background-size: cover;
+}
+.circle-loppy {
+  background-image: url(../images/circle_loppy.png);
+  background-position: center;
+  background-size: cover;
+}
+.circle-petty {
+  background-image: url(../images/circle_petty.png);
+  background-position: center;
+  background-size: cover;
+}
+.circle-pipi {
+  background-image: url(../images/circle_pipi.png);
+  background-position: center;
+  background-size: cover;
+}
+.circle-poby {
+  background-image: url(../images/circle_poby.png);
+  background-position: center;
+  background-size: cover;
+}
+.circle-pororo {
+  background-image: url(../images/circle_pororo.png);
+  background-position: center;
+  background-size: cover;
+}
+.circle-rody {
+  background-image: url(../images/circle_rody.png);
+  background-position: center;
+  background-size: cover;
+}
+.circle-tong {
+  background-image: url(../images/circle_tong.png);
+  background-position: center;
+  background-size: cover;
+}
 
 @media only screen and (max-width: 667px) {
   .cd {
     flex-basis: 16%;
-    height: 28%;
+    height: 32%;
+    margin: 0%;
   }
   .bd {
     width: 95%;
     height: 90%;
-    margin: 1% 0;
+    margin: .5% 0;
   }
   .aside-content {
     font-size: 80%;
   }
   .head-title {
-    font-size: 170%;
+    font-size: 200%;
+    padding: 0;
+  }
+  #modal {
+    font-size: 100%;
+    height: 37%;
+  }
+  #gameSelect {
+    font-size: 100%;
+    height: 35%;
+    width: 40%;
   }
 }
 
@@ -86,5 +233,23 @@ main {
   }
   .head-title {
     font-size: 200%;
+    padding: 0;
   }
+  #modal {
+    font-size: 100%;
+    width: 60%;
+    height: 22%;
+  }
+  #gameSelect {
+    font-size: 100%;
+    width: 70%;
+    height: 20%;
+  }
+}
+
+
+
+
+.hidden {
+  display: none;
 }
