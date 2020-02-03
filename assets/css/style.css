@@ -48,6 +48,11 @@ aside {
   justify-content: center;
   border-radius: 16px;
 }
+#refreshBtn {
+  color: white;
+  font-weight: 700;
+  text-shadow: 3px 3px rgba(252, 63, 220, 0.8);
+}
 .aside-content {
   text-align: center;
   font-size: 150%;
@@ -197,11 +202,11 @@ main {
     width: 16%;
   }
   .col-bd {
-    height: 13%;
+    height: 85%;
   }
   .col-25 {
     width: 20%;
-    height: 30%;
+    height: 25%;
   }
   .col-3 {
     width: 24%;
@@ -209,7 +214,7 @@ main {
   }
   .col-4 {
     width: 25%;
-    height: 40%;
+    height: 35%;
   }
   .bd {
     width: 95%;
@@ -217,12 +222,15 @@ main {
     margin: .5% 0;
   }
   .aside-content {
-    font-size: 80%;
+    font-size: 180%;
   }
   .head-title {
     font-size: 500%;
     padding: 0;
     margin-top: 10%;
+  }
+  main {
+    margin-top: 2%;
   }
   #modal {
     font-size: 100%;
@@ -260,7 +268,7 @@ main {
     margin: .5% 0;
   }
   .aside-content {
-    font-size: 80%;
+    font-size: 130%;
   }
   .head-title {
     font-size: 500%;
@@ -303,7 +311,7 @@ main {
     margin: .5% 0;
   }
   .aside-content {
-    font-size: 80%;
+    font-size: 130%;
   }
   .head-title {
     font-size: 450%;
@@ -326,7 +334,7 @@ main {
     width: 16%;
   }
   .col-bd {
-    height: 90%;
+    height: 85%;
   }
   .col-25 {
     width: 20%;
@@ -337,16 +345,16 @@ main {
     height: 40%;
   }
   .col-4 {
-    width: 25%;
-    height: 40%;
+    width: 26%;
+    height: 45%;
   }
   .bd {
     width: 95%;
-    height: 90%;
+    height: 12%;
     margin: .5% 0;
   }
   .aside-content {
-    font-size: 80%;
+    font-size: 100%;
   }
   .head-title {
     font-size: 250%;
@@ -369,7 +377,7 @@ main {
     width: 16%;
   }
   .col-bd {
-    height: 90%;
+    height: 11%;
   }
   .col-25 {
     width: 20%;
@@ -452,29 +460,32 @@ main {
 
 @media only screen and (max-width: 568px) {
   .col-2 {
-  width: 32%;
-  height: 15%;
+  width: 16%;
+  height: 25%;
   }
   .col-bd {
     height: 95%;
     width: 25%;
   }
   .col-25 {
-    width: 32%;
-    height: 15%;
+    width: 21%;
+    height: 30%;
   }
   .col-3 {
-    width: 44%;
-    height: 22%;
+    width: 24%;
+    height: 30%;
+  }
+  main {
+    align-content: space-around;
   }
   .col-4 {
-    width: 48%;
-    height: 23%;
+    width: 30%;
+    height: 40%;
   }
   .bd {
-    width: 95%;
-    height: 90%;
-    margin: 1% 0
+    width: 90%;
+    height: 10%;
+    margin: .5% 0
   }
   aside {
     height: 99%;
@@ -521,7 +532,7 @@ main {
   }
   .bd {
     width: 95%;
-    height: 90%;
+    height: 11%;
     margin: 1% 0
   }
   aside {
@@ -560,16 +571,16 @@ main {
     height: 15%;
   }
   .col-3 {
-    width: 44%;
-    height: 22%;
+    width: 48%;
+    height: 20%;
   }
   .col-4 {
     width: 48%;
-    height: 23%;
+    height: 20%;
   }
   .bd {
     width: 95%;
-    height: 90%;
+    height: 11%;
     margin: 1% 0
   }
   aside {
@@ -579,7 +590,7 @@ main {
     font-size: 75%;
   }
   .head-title {
-    font-size: 200%;
+    font-size: 180%;
     padding: 0;
   }
   #modal {
