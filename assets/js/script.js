@@ -135,21 +135,25 @@ function refresh() {
   var arr;
   var col
   if (maxMatches === 3) {
+    maxMatches = 0;
     arr = threeByTwoArr
     col = "col-4"
     mixCard(arr, 3, col)
   }
   if (maxMatches === 4) {
+    maxMatches = 0;
     arr = fourByTwoArr
     col = "col-3"
     mixCard(arr, 4, col)
   }
   if (maxMatches === 6) {
+    maxMatches = 0;
     arr = threeByFourArr
     col = "col-25"
     mixCard(arr, 6, col)
   }
   if (maxMatches === 9) {
+    maxMatches = 0;
     arr = threeBySixArr
     col = "col-2"
     mixCard(arr, 9, col)
