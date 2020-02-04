@@ -204,7 +204,7 @@ main {
     width: 16%;
   }
   .col-bd {
-    margin-top: 5%;
+    margin-top: 1%;
     height: 12%;
   }
   .col-25 {
@@ -234,7 +234,7 @@ main {
     margin-top: 10%;
   }
   main {
-    margin-top: 2%;
+    margin-top: 0.5%;
   }
   #modal {
     font-size: 100%;
@@ -284,7 +284,7 @@ main {
     height: 37%;
   }
   #gameSelect {
-    font-size: 220%;
+    font-size: 180%;
     height: 30%;
     width: 44%;
   }
@@ -381,7 +381,7 @@ main {
     width: 16%;
   }
   .col-bd {
-    height: 11%;
+    height: 10%;
   }
   .col-25 {
     width: 20%;
@@ -401,7 +401,7 @@ main {
     margin: .5% 0;
   }
   .aside-content {
-    font-size: 80%;
+    font-size: 100%;
   }
   .head-title {
     font-size: 250%;
@@ -468,7 +468,7 @@ main {
   height: 25%;
   }
   .col-bd {
-    height: 95%;
+    height: 88%;
     width: 25%;
   }
   .col-25 {
