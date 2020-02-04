@@ -83,7 +83,8 @@ main {
   position: absolute;
 }
 .card-back {
-  background-image: url(../images/pororo-bg4.jpg);
+  background-image: url(../images/pororo-bg6.jpg);
+  /* background-color: rgba(123, 198, 255); */
   background-position: center;
   background-size: cover;
   border-radius: 50%;
@@ -93,6 +94,7 @@ main {
 
 .card-back:hover {
   border: 5px solid hotpink;
+  background-color: rgba(123, 198, 255);
   transform: scale(1.1);
 }
 
