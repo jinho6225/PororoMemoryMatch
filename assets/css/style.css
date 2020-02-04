@@ -54,7 +54,7 @@ aside {
   font-weight: 700;
   text-shadow: 3px 3px rgba(252, 63, 220, 0.8);
   border-radius: 16px;
-  margin: 0;
+  margin: 2%;
 }
 .aside-content {
   text-align: center;
