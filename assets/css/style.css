@@ -54,6 +54,7 @@ aside {
   font-weight: 700;
   text-shadow: 3px 3px rgba(252, 63, 220, 0.8);
   border-radius: 16px;
+  margin: 0;
 }
 .aside-content {
   text-align: center;
@@ -397,8 +398,8 @@ main {
   }
   .bd {
     width: 95%;
-    height: 90%;
-    margin: .5% 0;
+    height:100%;
+    margin: 1.5% 0;
   }
   .aside-content {
     font-size: 100%;
