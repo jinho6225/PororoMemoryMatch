@@ -10,6 +10,9 @@ var maxMatches;
 var matches = 0;
 var attempts = 0;
 var gamesPlayed = 0;
+var x = document.getElementById("myAudio");
+
+
 
 function handleClick(e) {
   if (!e.target.className.includes("card-back")) {
@@ -100,24 +103,28 @@ function threeByTwo() {
   game.classList.remove('hidden')
   gameSelect.classList.add("hidden")
   mixCard(threeByTwoArr, 3, col)
+  x.play()
 }
 function fourByTwo() {
   var col = "col-3"
   game.classList.remove('hidden')
   gameSelect.classList.add("hidden")
   mixCard(fourByTwoArr, 4, col)
+  x.play()
 }
 function threeByFour() {
   var col = "col-25"
   game.classList.remove('hidden')
   gameSelect.classList.add("hidden")
   mixCard(threeByFourArr, 6, col)
+  x.play()
 }
 function threeBySix() {
   var col = "col-2"
   game.classList.remove('hidden')
   gameSelect.classList.add("hidden")
   mixCard(threeBySixArr, 9, col)
+  x.play()
 }
 
 var gamePlayedCount = 0
@@ -167,5 +174,11 @@ function selectGame() {
 function init() {
   gameCards.addEventListener("click", handleClick)
 }
+
+
+
+
+
+
 
 init()
