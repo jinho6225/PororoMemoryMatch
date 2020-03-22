@@ -1,41 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="assets/css/grid.css">
-  <link rel="stylesheet" href="assets/css/style.css">
-  <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="assets/css/grid.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1" />
 
-  <title>Document</title>
-</head>
-<body>
-  <div class="container">
-    <audio id="myAudio">
-      <source src="./assets/music/pororo-bg-music.mp3" type="audio/mpeg">
-    </audio>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <audio id="myAudio">
+        <!-- <source src="./assets/music/pororo-bg-music.mp3" type="audio/mpeg"> -->
+      </audio>
 
       <div class="head row">
         <header>
-          <p class="head-title"> PoRoRo Memory Match</p>
+          <p class="head-title">PoRoRo Memory Match</p>
         </header>
       </div>
 
-        <div id="gameSelect" class="">
-          <p class="gameSelect-content">
-            Welcome!!!!😍<br>
-            Please choose the game size below ⬇️<br></p>
-          <button onclick="threeByTwo()">2 ｘ 3</button>
-          <button onclick="fourByTwo()">2 ｘ 4</button>
-          <button onclick="threeByFour()">3 ｘ 4</button>
-          <button onclick="threeBySix()">3 ｘ 6</button>
+      <div id="gameSelect" class="">
+        <p class="gameSelect-content">
+          Welcome!!!!😍<br />
+          Please choose the game size below ⬇️<br />
+        </p>
 
-        </div>
+        <button class="gameSelectorBtn" onclick="threeByTwo()">2 ｘ 3</button>
+        <button class="gameSelectorBtn" onclick="fourByTwo()">2 ｘ 4</button>
+        <button class="gameSelectorBtn" onclick="threeByFour()">3 ｘ 4</button>
+        <button class="gameSelectorBtn" onclick="threeBySix()">3 ｘ 6</button>
+      </div>
 
       <div class="game row hidden">
-
-
         <aside class="col-2 col-bd">
           <div class="bd">
             <p class="aside-content">Stats</p>
@@ -59,7 +58,13 @@
             <p class="aside-content" id="accuracy">0</p>
           </div>
           <div class="bd">
-            <button id="refreshBtn" class="aside-content" onclick="location.reload()">refresh</button>
+            <button
+              id="refreshBtn"
+              class="aside-content"
+              onclick="location.reload()"
+            >
+              refresh
+            </button>
           </div>
         </aside>
 
@@ -67,22 +72,20 @@
           <!-- ?? -->
         </main>
 
-
-          <div id="modal" class="hidden">
-            <p class="modal-content">
-            Congratulation!!👍🏻<br>
-            Do you want to start again??😍<br>
-            Please click button below⬇️</p>
-            <button class="modal-content" onclick="refresh()">restart!</button>
-            <button class="modal-content" onclick="selectGame()">select game</button>
-          </div>
+        <div id="modal" class="hidden">
+          <p class="modal-content">
+            Congratulation!!👍🏻<br />
+            Do you want to start again??😍<br />
+            Please click button below⬇️
+          </p>
+          <button class="modal-content" onclick="refresh()">restart!</button>
+          <button class="modal-content" onclick="selectGame()">
+            select game
+          </button>
+        </div>
       </div>
+    </div>
 
-  </div>
-
-
-
-  <script src="assets/js/script.js"></script>
-
-</body>
+    <script src="assets/js/script.js"></script>
+  </body>
 </html>
