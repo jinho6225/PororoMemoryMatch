@@ -15,8 +15,6 @@ A JavaScript memory matching application based on the dystopian future.
 - The app will calculate accuracy
 
 ### preview
-- based on time, it will greet morning, afternoon, evening
-- based on weather condition, background image will be decided
 
 <p align="middle">
   <img src="/assets/pororoMemoryMatch.png">
