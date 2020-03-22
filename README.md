@@ -1,5 +1,23 @@
 # Pororo Memory Match
 
-make memory match game
-theme will be Pororo
-for my cousin
+A JavaScript memory matching application based on the dystopian future.
+
+## Technologies Used
+
+- JavaScript
+- HTML5
+- CSS3
+
+## Features
+- Users can choose game level
+- Users can click on image cards to begin the memory matching process and start backgound music
+- Users can select game level if user completed
+- The app will calculate accuracy
+
+### preview
+- based on time, it will greet morning, afternoon, evening
+- based on weather condition, background image will be decided
+
+<p align="middle">
+  <img src="/assets/pororoMemoryMatch.png">
+</p>
