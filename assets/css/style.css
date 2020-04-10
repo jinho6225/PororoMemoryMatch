@@ -3,6 +3,10 @@
   display: flex;
   align-items: center;
 }
+header {
+  display: flex;
+  align-items: center;
+}
 .head-title {
   width: 100%;
   font-size: 400%;
@@ -16,11 +20,17 @@
 
 @keyframes glow {
   from {
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073,
+      0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
   }
   to {
-    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6,
+      0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
   }
+}
+
+.hidden {
+  display: none;
 }
 
 .game {
@@ -64,16 +74,14 @@ main {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  align-items: baseline;
-  height: 100%;
 }
 .cd {
-  margin: .2%;
+  margin: 0.5%;
   /* flex-basis: 16%; */
-  /* height: 30%; */
   position: relative;
 }
-.card-front, .card-back {
+.card-front,
+.card-back {
   background-color: powderblue;
   border-radius: 50%;
   border: 1px solid hotpink;
@@ -109,15 +117,20 @@ main {
   text-align: center;
   padding: 2%;
   background-color: white;
-  color:hotpink;
+  color: hotpink;
   border-radius: 16px;
-  box-shadow: 5px 10px 50px hotpink, 5px 10px 50px rgb(238, 255, 163), 5px 10px 50px rgb(255, 63, 207)
+  box-shadow: 5px 10px 50px hotpink, 5px 10px 50px rgb(238, 255, 163),
+    5px 10px 50px rgb(255, 63, 207);
 }
 
 .modal-conent {
   text-align: center;
   font-size: 130%;
   border-radius: 16px;
+}
+.modal-conent:hover {
+  cursor: pointer;
+  background-color: cadetblue;
 }
 
 #modal > button {
@@ -138,9 +151,10 @@ main {
   text-align: center;
   padding: 2%;
   background-color: rgba(255, 255, 255, 0.88);
-  color:hotpink;
+  color: hotpink;
   border-radius: 16px;
-  box-shadow: 5px 10px 50px hotpink, 5px 10px 50px rgb(238, 255, 163), 5px 10px 50px rgb(255, 63, 207)
+  box-shadow: 5px 10px 50px hotpink, 5px 10px 50px rgb(238, 255, 163),
+    5px 10px 50px rgb(255, 63, 207);
 }
 
 .gameSelect-conent {
@@ -154,7 +168,10 @@ main {
   border-radius: 16px;
   text-align: center;
 }
-
+.gameSelectorBtn:hover {
+  cursor: pointer;
+  background-color: cadetblue;
+}
 
 .circle-crong {
   background-image: url(../images/circle_crong.png);
@@ -204,7 +221,8 @@ main {
 
 @media only screen and (max-width: 1605px) {
   .col-2 {
-    width: 16%;
+    width: 15%;
+    height: 27%;
   }
   .col-bd {
     margin-top: 1%;
@@ -212,24 +230,20 @@ main {
   }
   .col-25 {
     width: 20%;
-    height: 25%;
+    height: 30%;
   }
   .col-3 {
     width: 24%;
     height: 40%;
   }
-  .col-4 {
-    width: 25%;
-    height: 35%;
-  }
   .bd {
     width: 95%;
     height: 90%;
-    margin: .5% 0;
+    margin: 0.5% 0;
   }
   .aside-content {
     font-size: 180%;
-    margin:5% 0;
+    margin: 5% 0;
   }
   .head-title {
     font-size: 500%;
@@ -237,10 +251,9 @@ main {
     margin-top: 10%;
   }
   main {
-    margin-top: 0.5%;
+    margin-top: 1%;
   }
   #modal {
-    font-size: 100%;
     height: 37%;
   }
   #gameSelect {
@@ -248,11 +261,15 @@ main {
     height: 33%;
     width: 44%;
   }
+  .hidden {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 1365px) {
   .col-2 {
-    width: 16%;
+    width: 15%;
+    height: 25%;
   }
   .col-bd {
     height: 90%;
@@ -272,7 +289,7 @@ main {
   .bd {
     width: 95%;
     height: 90%;
-    margin: .5% 0;
+    margin: 0.5% 0;
   }
   .aside-content {
     font-size: 130%;
@@ -283,7 +300,6 @@ main {
     margin-top: 10%;
   }
   #modal {
-    font-size: 100%;
     height: 37%;
   }
   #gameSelect {
@@ -291,11 +307,21 @@ main {
     height: 30%;
     width: 44%;
   }
+  .hidden {
+    display: none;
+  }
+}
+@media only screen and (max-width: 1154px) {
+  #modal {
+    height: 38%;
+    width: 45%;
+  }
 }
 
 @media only screen and (max-width: 1023px) {
   .col-2 {
-    width: 16%;
+    width: 15%;
+    height: 25%;
   }
   .col-bd {
     height: 90%;
@@ -315,7 +341,7 @@ main {
   .bd {
     width: 95%;
     height: 90%;
-    margin: .5% 0;
+    margin: 0.5% 0;
   }
   .aside-content {
     font-size: 130%;
@@ -326,16 +352,49 @@ main {
     margin-top: 10%;
   }
   #modal {
-    font-size: 100%;
-    height: 37%;
+    height: 38%;
+    width: 45%;
   }
   #gameSelect {
     font-size: 165%;
-    height: 25%;
+    height: 30%;
     width: 44%;
   }
+  .hidden {
+    display: none;
+  }
 }
-
+@media only screen and (max-width: 901px) {
+  .bd {
+    width: 95%;
+    height: 90%;
+    margin: 0.5% 0;
+  }
+  .aside-content {
+    font-size: 100%;
+  }
+  .head-title {
+    font-size: 250%;
+    padding: 0;
+    margin-top: 5%;
+  }
+  #modal {
+    font-size: 165%;
+    height: 30%;
+    width: 50%;
+  }
+  #gameSelect {
+    font-size: 150%;
+    height: 30%;
+    width: 45%;
+  }
+  #gameSelect > button {
+    font-size: 70%;
+  }
+  .hidden {
+    display: none;
+  }
+}
 @media only screen and (max-width: 812px) {
   .col-2 {
     width: 16%;
@@ -358,7 +417,7 @@ main {
   .bd {
     width: 95%;
     height: 90%;
-    margin: .5% 0;
+    margin: 0.5% 0;
   }
   .aside-content {
     font-size: 100%;
@@ -369,13 +428,69 @@ main {
     margin-top: 5%;
   }
   #modal {
-    font-size: 100%;
-    height: 37%;
+    font-size: 150%;
+    height: 30%;
+    width: 50%;
   }
   #gameSelect {
-    font-size: 100%;
-    height: 35%;
+    font-size: 150%;
+    height: 30%;
     width: 45%;
+  }
+  #gameSelect > button {
+    font-size: 70%;
+  }
+  .hidden {
+    display: none;
+  }
+}
+@media (orientation: landscape) and (max-width: 812px) {
+  .col-2 {
+    width: 15%;
+  }
+  .col-bd {
+    height: 85%;
+  }
+  .col-25 {
+    width: 20%;
+    height: 30%;
+  }
+  .col-3 {
+    width: 24%;
+    height: 40%;
+  }
+  .col-4 {
+    width: 26%;
+    height: 45%;
+  }
+  .bd {
+    width: 95%;
+    height: 90%;
+    margin: 0.5% 0;
+  }
+  .aside-content {
+    font-size: 100%;
+  }
+  .head-title {
+    font-size: 250%;
+    padding: 0;
+    margin-top: 5%;
+  }
+  #modal {
+    font-size: 150%;
+    height: 50%;
+    width: 50%;
+  }
+  #gameSelect {
+    font-size: 150%;
+    height: 40%;
+    width: 50%;
+  }
+  #gameSelect > button {
+    font-size: 70%;
+  }
+  .hidden {
+    display: none;
   }
 }
 
@@ -412,13 +527,69 @@ main {
     margin-top: 5%;
   }
   #modal {
-    font-size: 100%;
-    height: 37%;
+    font-size: 150%;
+    height: 30%;
+    width: 50%;
   }
   #gameSelect {
-    font-size: 100%;
-    height: 35%;
+    font-size: 150%;
+    height: 30%;
     width: 45%;
+  }
+  #gameSelect > button {
+    font-size: 70%;
+  }
+  .hidden {
+    display: none;
+  }
+}
+@media (orientation: landscape) and (max-width: 736px) {
+  .col-2 {
+    width: 15%;
+  }
+  .col-bd {
+    height: 85%;
+  }
+  .col-25 {
+    width: 20%;
+    height: 30%;
+  }
+  .col-3 {
+    width: 24%;
+    height: 40%;
+  }
+  .col-4 {
+    width: 26%;
+    height: 45%;
+  }
+  .bd {
+    width: 95%;
+    height: 90%;
+    margin: 0.5% 0;
+  }
+  .aside-content {
+    font-size: 100%;
+  }
+  .head-title {
+    font-size: 250%;
+    padding: 0;
+    margin-top: 5%;
+  }
+  #modal {
+    font-size: 150%;
+    height: 50%;
+    width: 50%;
+  }
+  #gameSelect {
+    font-size: 150%;
+    height: 40%;
+    width: 50%;
+  }
+  #gameSelect > button {
+    font-size: 70%;
+  }
+  .hidden {
+    display: none;
   }
 }
 
@@ -444,7 +615,7 @@ main {
   .bd {
     width: 95%;
     height: 90%;
-    margin: .5% 0;
+    margin: 0.5% 0;
   }
   .aside-content {
     font-size: 80%;
@@ -455,20 +626,33 @@ main {
     margin-top: 5%;
   }
   #modal {
-    font-size: 100%;
-    height: 37%;
+    font-size: 150%;
+    height: 30%;
+    width: 50%;
   }
   #gameSelect {
-    font-size: 100%;
-    height: 35%;
+    font-size: 150%;
+    height: 30%;
     width: 45%;
   }
+  #gameSelect > button {
+    font-size: 60%;
+  }
+  .hidden {
+    display: none;
+  }
 }
-
+@media only screen and (max-width: 616px) {
+  #modal {
+    font-size: 135%;
+    height: 27%;
+    width: 50%;
+  }
+}
 @media only screen and (max-width: 568px) {
   .col-2 {
-  width: 16%;
-  height: 25%;
+    width: 16%;
+    height: 25%;
   }
   .col-bd {
     height: 88%;
@@ -492,7 +676,7 @@ main {
   .bd {
     width: 90%;
     height: 90%;
-    margin: .5% 0
+    margin: 0.5% 0;
   }
   aside {
     height: 99%;
@@ -505,21 +689,33 @@ main {
     padding: 0;
   }
   #modal {
-    font-size: 100%;
-    width: 60%;
-    height: 22%;
+    font-size: 135%;
+    height: 27%;
+    width: 50%;
   }
   #gameSelect {
-    font-size: 100%;
-    width: 70%;
-    height: 40%;
+    font-size: 150%;
+    height: 27%;
+    width: 45%;
+  }
+  #gameSelect > button {
+    font-size: 50%;
+  }
+  .hidden {
+    display: none;
   }
 }
-
+@media only screen and (max-width: 616px) {
+  #modal {
+    font-size: 120%;
+    height: 27%;
+    width: 50%;
+  }
+}
 @media only screen and (max-width: 414px) {
   .col-2 {
-  width: 32%;
-  height: 15%;
+    width: 32%;
+    height: 15%;
   }
   .col-bd {
     height: 95%;
@@ -540,7 +736,7 @@ main {
   .bd {
     width: 95%;
     height: 11%;
-    margin: 1% 0
+    margin: 1% 0;
   }
   aside {
     height: 99%;
@@ -553,21 +749,24 @@ main {
     padding: 0;
   }
   #modal {
-    font-size: 100%;
-    width: 60%;
-    height: 22%;
+    font-size: 120%;
+    height: 27%;
+    width: 50%;
   }
   #gameSelect {
     font-size: 100%;
     width: 80%;
     height: 20%;
   }
+  .hidden {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 375px) {
   .col-2 {
-  width: 32%;
-  height: 15%;
+    width: 32%;
+    height: 15%;
   }
   .col-bd {
     height: 95%;
@@ -588,7 +787,7 @@ main {
   .bd {
     width: 95%;
     height: 11%;
-    margin: 1% 0
+    margin: 1% 0;
   }
   aside {
     height: 99%;
@@ -603,19 +802,22 @@ main {
   #modal {
     font-size: 100%;
     width: 60%;
-    height: 22%;
+    height: 20%;
   }
   #gameSelect {
     font-size: 100%;
     width: 80%;
-    height: 20%;
+    height: 17%;
+  }
+  .hidden {
+    display: none;
   }
 }
 
 @media only screen and (max-width: 320px) {
   .col-2 {
-  width: 32%;
-  height: 15%;
+    width: 32%;
+    height: 15%;
   }
   .col-bd {
     height: 95%;
@@ -636,7 +838,7 @@ main {
   .bd {
     width: 95%;
     height: 11%;
-    margin: 1% 0
+    margin: 1% 0;
   }
   aside {
     height: 99%;
@@ -658,10 +860,7 @@ main {
     width: 80%;
     height: 23%;
   }
-}
-
-
-
-.hidden {
-  display: none;
+  .hidden {
+    display: none;
+  }
 }
