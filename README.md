@@ -30,7 +30,7 @@ Try the application live at http://pororo-memory-match.jinho6225.com/
 #### Getting Started
 1. Clone the repository.
   ```shell
-  git clone https://github.com/jinho6225/pororo-memory-match
+  git clone https://github.com/jinho6225/pororo-memory-match.git
   cd pororo-memory-match
   ```
 2. View the application by opening ```index.html``` in your browser.
