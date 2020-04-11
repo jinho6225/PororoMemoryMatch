@@ -1,21 +1,36 @@
 # Pororo Memory Match
 
-A JavaScript memory matching application based on the dystopian future.
+## Description
+Memory Match is a simple card matching game Pororo carton themed memory match.
+
+## Live Website
+Try the application live at http://pororo-memory-match.jinho6225.com/
 
 ## Technologies Used
-
-- JavaScript
 - HTML5
 - CSS3
+- JavaScript
+- AWS EC2
 
 ## Features
-- Users can choose game level
-- Users can click on image cards to begin the memory matching process and start backgound music
-- Users can select game level if user completed
-- The app will calculate accuracy
+- User can choose a difficulty
+- User can play a game of memory match
+- User can see number of games played
+- User can see stats
+- User can play the same level of game or different difficulty
 
-### preview
+## Preview
+![Memory Match](assets/images/pororoMemoryMatch.png)
 
-<p align="middle">
-  <img src="/assets/pororoMemoryMatch.png">
-</p>
+## Development
+
+#### System Requirements
+- None
+
+#### Getting Started
+1. Clone the repository.
+  ```shell
+  git clone https://github.com/jinho6225/pororo-memory-match
+  cd pororo-memory-match
+  ```
+2. View the application by opening ```index.html``` in your browser.
